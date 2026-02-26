@@ -7,7 +7,7 @@ export enum RWD_VARIANTS {
 }
 
 export enum CLASS_SEGMENT {
-  // 用來標示共通點的類別
+  // 用來標示共通點，或是類似 z-index 的類別
   // e.g. 假設一個按鈕有三個種類，三種除了顏色不同之外，w / h 大小都是 160px、40px，那麼其 w / h 就會放在這
   // 而顏色就可以用以下 style 類別來標示
   base = "base",
