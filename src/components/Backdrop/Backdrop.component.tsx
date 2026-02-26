@@ -1,6 +1,6 @@
 "use client";
 import { createPortal } from "react-dom";
-import { backdropClasses, modalClasses } from "./Backdrop.style";
+import { backdropClasses, modalClasses } from "./Backdrop.styles";
 
 import { useToChangeBackdropOverFlow } from "./Backdrop.hooks";
 

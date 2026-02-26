@@ -1,8 +1,11 @@
-import { mergeRWDClassesHelper } from "@/lib/utils/style.utils";
+import {
+  mergeRWDClassesHelper,
+  mergeSegmentClassesHelper,
+} from "@/lib/utils/style.utils";
 
 import { RWD_VARIANTS } from "@/shared/types/style.type";
 
-export const backdropClasses = mergeRWDClassesHelper({
+export const backdropClasses = mergeSegmentClassesHelper({
   [RWD_VARIANTS.base]:
     "fixed w-full h-screen top-0 left-0 bg-ghost-lt backdrop-blur-md z-2000",
 });

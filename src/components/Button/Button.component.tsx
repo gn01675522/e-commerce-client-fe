@@ -12,7 +12,7 @@ export const Button: FC<IButton> = ({
   isLoading = false,
   ...props
 }) => {
-  const combinedClasses = cn(buttonClassByVariant[variant], className);
+  const combinedClasses = cn(buttonClassByVariant[variant], className ?? "");
 
   return (
     <button disabled={isLoading} className={combinedClasses} {...props}>
