@@ -1,8 +1,8 @@
 import clsx from "clsx";
 import { twMerge } from "tailwind-merge";
-import { RWD_VARIANTS } from "@/shared/types/style.type";
 
 import type { ClassValue } from "clsx";
+import type { RWD_VARIANTS, CLASS_SEGMENT } from "@/shared/types/style.type";
 
 export const cn = (...inputs: ClassValue[]) => twMerge(clsx(inputs));
 
@@ -11,3 +11,9 @@ export const mergeRWDClassesHelper = <
 >(
   variants: T,
 ): string => cn(...Object.values(variants));
+
+export const mergeSegmentClassesHelper = <
+  T extends Partial<Record<CLASS_SEGMENT, string>>,
+>(
+  segment: T,
+): string => cn(...Object.values(segment));

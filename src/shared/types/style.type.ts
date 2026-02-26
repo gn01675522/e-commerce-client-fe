@@ -4,3 +4,11 @@ export enum RWD_VARIANTS {
   medium = "medium",
   large = "large",
 }
+
+export enum CLASS_SEGMENT {
+  base = "base",
+  layout = "layout",
+  structure = "structure",
+  style = "style",
+  behavior = "behavior",
+}
