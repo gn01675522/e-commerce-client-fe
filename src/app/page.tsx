@@ -1,22 +1,12 @@
 "use client";
 import Image from "next/image";
 
-import { Input } from "@/components/Input";
-import { Select } from "@/components/Select";
+import { Textarea } from "@/components/Textarea";
 
 export default function Home() {
   return (
     <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <Select
-        id="select"
-        title="Select"
-        options={[
-          { id: "1", name: "Option 1" },
-          { id: "2", name: "Option 2" },
-          { id: "3", name: "Option 3" },
-        ]}
-      />
-      <Input />
+      <Textarea id="select" title="Select" />
       <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
         <Image
           className="dark:invert"
