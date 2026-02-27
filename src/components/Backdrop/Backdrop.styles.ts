@@ -1,7 +1,4 @@
-import {
-  mergeRWDClassesHelper,
-  mergeSegmentClassesHelper,
-} from "@/lib/utils/style.utils";
+import { mergeRWDClassesHelper, mergeSegmentClassesHelper } from "@/lib/utils";
 
 import { RWD_VARIANTS } from "@/shared/types/style.type";
 

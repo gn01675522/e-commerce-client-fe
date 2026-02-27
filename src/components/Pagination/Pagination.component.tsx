@@ -1,4 +1,4 @@
-import { cn } from "@/lib/utils/style.utils";
+import { cn } from "@/lib/utils";
 import { onChangePageHandler } from "./Pagination.helper";
 
 import {

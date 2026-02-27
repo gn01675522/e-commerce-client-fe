@@ -1,4 +1,4 @@
-import { mergeSegmentClassesHelper } from "@/lib/utils/style.utils";
+import { mergeSegmentClassesHelper } from "@/lib/utils";
 import { CLASS_SEGMENT } from "@/shared/types/style.type";
 
 const buttonBaseClasses = mergeSegmentClassesHelper({
