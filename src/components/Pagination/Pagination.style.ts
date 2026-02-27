@@ -1,5 +1,5 @@
 import { mergeSegmentClassesHelper } from "@/lib/utils";
-import { CLASS_SEGMENT } from "@/shared/types/style.type";
+import { CLASS_SEGMENT } from "@/shared/types";
 
 export const containerClasses = mergeSegmentClassesHelper({
   [CLASS_SEGMENT.layout]: "flex gap-4 justify-between items-center",

@@ -1,5 +1,5 @@
 import { mergeSegmentClassesHelper } from "@/lib/utils";
-import { CLASS_SEGMENT } from "@/shared/types/style.type";
+import { CLASS_SEGMENT } from "@/shared/types";
 
 const buttonBaseClasses = mergeSegmentClassesHelper({
   [CLASS_SEGMENT.layout]: "flex justify-center items-center",

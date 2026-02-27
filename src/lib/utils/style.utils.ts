@@ -2,7 +2,7 @@ import clsx from "clsx";
 import { twMerge } from "tailwind-merge";
 
 import type { ClassValue } from "clsx";
-import type { RWD_VARIANTS, CLASS_SEGMENT } from "@/shared/types/style.type";
+import type { RWD_VARIANTS, CLASS_SEGMENT } from "@/shared/types";
 
 export const cn = (...inputs: ClassValue[]) => twMerge(clsx(inputs));
 

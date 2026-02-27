@@ -1,6 +1,6 @@
 import { mergeRWDClassesHelper, mergeSegmentClassesHelper } from "@/lib/utils";
 
-import { RWD_VARIANTS } from "@/shared/types/style.type";
+import { RWD_VARIANTS } from "@/shared/types";
 
 export const backdropClasses = mergeSegmentClassesHelper({
   [RWD_VARIANTS.base]:

@@ -1,5 +1,5 @@
 import { mergeSegmentClassesHelper } from "@/lib/utils";
-import { CLASS_SEGMENT } from "@/shared/types/style.type";
+import { CLASS_SEGMENT } from "@/shared/types";
 
 export const sellPriceClasses = mergeSegmentClassesHelper({
   [CLASS_SEGMENT.style]: "font-bold text-ghost-lt",
