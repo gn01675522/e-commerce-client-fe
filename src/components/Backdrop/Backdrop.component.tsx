@@ -4,14 +4,10 @@ import { backdropClasses, modalClasses } from "./Backdrop.styles";
 
 import { useToChangeBackdropOverFlow } from "./Backdrop.hooks";
 
-import type { FC, ReactNode, MouseEvent } from "react";
+import type { FC } from "react";
+import type { IBackdrop } from "./Backdrop.types";
 
-type PropsType = {
-  children?: ReactNode;
-  onClose: (e: MouseEvent<HTMLElement>) => void;
-};
-
-export const Backdrop: FC<PropsType> = ({ children, onClose }) => {
+export const Backdrop: FC<IBackdrop> = ({ children, onClose }) => {
   const portalElement = document.body;
 
   useToChangeBackdropOverFlow();
