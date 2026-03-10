@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .triangle {
+    clip-path: polygon(0% 100%, 100% 100%, 50% 0%);
+  }
+}
