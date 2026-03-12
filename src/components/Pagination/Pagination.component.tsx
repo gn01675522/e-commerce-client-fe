@@ -9,8 +9,10 @@ import {
   activeClasses,
 } from "./Pagination.style";
 
+import { DIRECTION_VARIANT } from "@/shared/types";
+
 import type { FC } from "react";
-import { PAGE_ACTION_CLASSES, type IPagination } from "./Pagination.types";
+import type { IPagination } from "./Pagination.types";
 
 export const Pagination: FC<IPagination> = ({
   pageCount = 1,
@@ -31,8 +33,8 @@ export const Pagination: FC<IPagination> = ({
     <nav className={containerClasses} aria-label="Page navigation">
       <button
         type="button"
-        aria-label={PAGE_ACTION_CLASSES.prev}
-        name={PAGE_ACTION_CLASSES.prev}
+        aria-label={DIRECTION_VARIANT.prev}
+        name={DIRECTION_VARIANT.prev}
         className={buttonClasses}
         onClick={(e) => onChangePageHandler({ e, currentPage, onChangePage })}
         disabled={!hasPrev}
@@ -54,8 +56,8 @@ export const Pagination: FC<IPagination> = ({
       <button
         className={buttonClasses}
         onClick={(e) => onChangePageHandler({ e, currentPage, onChangePage })}
-        aria-label={PAGE_ACTION_CLASSES.next}
-        name={PAGE_ACTION_CLASSES.next}
+        aria-label={DIRECTION_VARIANT.next}
+        name={DIRECTION_VARIANT.next}
         disabled={!hasNext}
       >
         ＞

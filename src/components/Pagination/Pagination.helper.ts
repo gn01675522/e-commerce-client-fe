@@ -1,4 +1,4 @@
-import { PAGE_ACTION_CLASSES } from "./Pagination.types";
+import { DIRECTION_VARIANT } from "@/shared/types";
 
 import type { MouseEvent } from "react";
 
@@ -19,7 +19,7 @@ export const onChangePageHandler = ({
   const { name } = e.currentTarget;
 
   const targetPage =
-    name === PAGE_ACTION_CLASSES.next ? currentPage + 1 : currentPage - 1;
+    name === DIRECTION_VARIANT.next ? currentPage + 1 : currentPage - 1;
 
   onChangePage(targetPage);
 };

@@ -1,7 +1,7 @@
 import type { FC } from "react";
 
 type PropsType = {
-  className: string;
+  className?: string;
 };
 
 export const RightArrowSVGIcon: FC<PropsType> = ({ className }) => {

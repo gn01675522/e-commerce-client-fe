@@ -10,5 +10,5 @@ export const backdropClasses = mergeSegmentClassesHelper({
 export const modalClasses = mergeRWDClassesHelper({
   [RWD_VARIANTS.base]:
     "absolute w-[90%] h-min bg-primary p-4 rounded-xl top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-3000",
-  [RWD_VARIANTS.medium]: "w-[40%]",
+  [RWD_VARIANTS.medium]: "md:w-[40%]",
 });

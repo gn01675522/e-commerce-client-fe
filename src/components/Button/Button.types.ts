@@ -3,11 +3,12 @@ import type { ComponentPropsWithRef } from "react";
 
 export enum BUTTON_VARIANT {
   primary = "primary",
+  circle = "circle",
 }
 
 export interface IButton extends ComponentPropsWithRef<"button"> {
   children: ReactNode;
   variant: BUTTON_VARIANT;
-  isLoading: boolean;
+  isLoading?: boolean;
   className?: string;
 }

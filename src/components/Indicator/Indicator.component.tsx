@@ -1,3 +1,4 @@
+"use client";
 import { cn } from "@/lib/utils";
 import {
   containerClasses,
@@ -6,27 +7,24 @@ import {
 } from "./Indicator.style";
 
 import type { FC } from "react";
+import type { IIndicator } from "./Indicator.types";
 
-type IndicatorProps = {
-  imgCount: number;
-  imgNum: number;
-  onChangeImg: (i: number) => void;
-};
-
-export const Indicator: FC<IndicatorProps> = ({
-  imgCount,
-  imgNum,
+export const Indicator: FC<IIndicator> = ({
+  totalCount,
+  targetNum,
   onChangeImg,
+  containerClass,
 }) => {
-  const dotCombinedClasses = (i: number) =>
-    cn(dotsClasses, imgNum === i ? dotActiveClasses : "");
+  const combinedContainerClasses = cn(containerClasses, containerClass ?? "");
+  const combinedDotClasses = (i: number) =>
+    cn(dotsClasses, targetNum === i ? dotActiveClasses : "");
 
   return (
-    <div className={containerClasses}>
-      {[...new Array(imgCount)].map((_, i) => (
+    <div className={combinedContainerClasses}>
+      {[...new Array(totalCount)].map((_, i) => (
         <div
           key={i}
-          className={dotCombinedClasses(i)}
+          className={combinedDotClasses(i)}
           onClick={() => onChangeImg(i)}
         />
       ))}

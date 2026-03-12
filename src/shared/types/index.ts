@@ -1,1 +1,2 @@
-export * from "./style.type";
+export * from "./style.types";
+export * from "./common.types";

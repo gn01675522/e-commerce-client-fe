@@ -19,4 +19,6 @@ export enum CLASS_SEGMENT {
   style = "style",
   // 用來標示 focus、disabled、hover 等有狀態切換的類別
   behavior = "behavior",
+  // 偽元素專用 (e.g. after、before)
+  pseudo = "pseudo",
 }
